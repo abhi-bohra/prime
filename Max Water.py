@@ -10,6 +10,6 @@ def water(a):
         for j in range(i+1, len(a)):
             area = max(area, min(a[i], a[j]) * (j - 1))
     return area
-a = [3, 1, 2, 4, 5]
-water(a)
+a = list(map(int, input("Enter numbers").strip().split()))
 
+water(a)
